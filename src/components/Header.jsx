@@ -1,4 +1,5 @@
-import Logo from "../assets/Logo.webp"
+import Logo from "../assets/Logo.webp";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -7,12 +8,10 @@ function Header() {
         <img src={Logo} alt="" className="header__img" />
         <nav className="header__nav">
           <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/">About</a></li>
-            <li><a href="/">Menu</a></li>
-            <li><a href="/">Reservations</a></li>
-            <li><a href="/">Order Online</a></li>
-            <li><a href="/">Login</a></li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/Menu">Menu</Link></li>
+            <li><Link to="/Reservations">Reservations</Link></li>
+            <li><Link to="/Order">Order online</Link></li>
           </ul>
         </nav>
       </div>

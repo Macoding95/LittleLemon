@@ -1,4 +1,5 @@
-import Heroimg from "../../assets/Hero.webp"
+import Heroimg from "../../assets/Hero.webp";
+import { Link } from "react-router-dom";
 
 function Hero() {
   return (
@@ -8,7 +9,7 @@ function Hero() {
           <h1 className="hero__title">Little Lemon</h1>
           <h2 className="hero__subtitle">Chicago</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultricies dictum lacus id condimentum. </p>
-          <a href="/">Reserve a table</a>
+          <Link to="/Reservations">Reserve a table</Link>
         </div>
         <div className="hero__img">
           <img src={Heroimg} alt="Little Lemon Restaurant" />

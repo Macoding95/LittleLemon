@@ -2,12 +2,13 @@ import Iconfood from "../../assets/icon-food.webp";
 import Greeksalad from "../../assets/greek-salad.webp";
 import Bruchetta from "../../assets/bruchetta.webp";
 import Lemondessert from "../../assets/lemon-dessert.webp";
+import { Link } from "react-router-dom";
 
 function Specials() {
   return (
     <section className="specials">
       <h2 className="specials__title">Specials</h2>
-      <a href="/" className="specials__cta">Online menu</a>
+      <Link to="/Order" className="specials__cta">Online menu</Link>
       <div className="specials__container">
         <div className="specials__card">
           <img src={Greeksalad} alt="Greek Salad" />
@@ -17,7 +18,7 @@ function Specials() {
               <strong className="price">$12.99</strong>
             </div>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultricies dictum lacus id condimentum. Etiam commodo augue dui. Vestibulum facilisis nunc sed laoreet ultrices.</p>
-            <a href="/">Order a delivery <img src={Iconfood} alt="" /></a>
+            <Link to="/order">Order a delivery <img src={Iconfood} alt="" /></Link>
           </div>
         </div>
         <div className="specials__card">
@@ -28,7 +29,7 @@ function Specials() {
               <strong className="price">$14.99</strong>
             </div>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultricies dictum lacus id condimentum. Etiam commodo augue dui. Vestibulum facilisis nunc sed laoreet ultrices.</p>
-            <a href="/">Order a delivery <img src={Iconfood} alt="" /></a>
+            <Link to="/order">Order a delivery <img src={Iconfood} alt="" /></Link>
           </div>
         </div>
         <div className="specials__card">
@@ -39,7 +40,7 @@ function Specials() {
               <strong className="price">$5.00</strong>
             </div>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultricies dictum lacus id condimentum. Etiam commodo augue dui. Vestibulum facilisis nunc sed laoreet ultrices.</p>
-            <a href="/">Order a delivery <img src={Iconfood} alt="" /></a>
+            <Link to="/order">Order a delivery <img src={Iconfood} alt="" /></Link>
           </div>
         </div>
       </div>
