@@ -25,7 +25,12 @@ strong {
 
 p,
 span,
-a {
+a,
+label,
+input,
+select,
+input::placeholder,
+select::placeholder {
   font-family: 'Karla', sans-serif;
   font-size: 18px;
 }

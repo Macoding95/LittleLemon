@@ -7,31 +7,47 @@ function Testimonials() {
   return (
     <section className="testimonials">
       <div className="testimonials__layout">
-        <h1 className="testimonials__title">Testimonials</h1>
+        <h2 className="testimonials__title">Testimonials</h2>
         <div className="testimonials__container">
           <div className="testimonials__card">
-            <h2>Rating 5⭐</h2>
-            <img src={Avatar1} alt="Avatar" />
-            <p>Exquisite flavors, impeccable service. Unforgettable experience.</p>
-            <p className="name">Mark</p>
+            <div className="testimonials__card__container">
+              <h3>Rating 5⭐</h3>
+              <img src={Avatar1} alt="Avatar" />
+            </div>
+            <div className="testimonials__card__info">
+              <p className="name">Mark</p>
+              <p>Exquisite flavors, impeccable service. Unforgettable experience.</p>
+            </div>
           </div>
           <div className="testimonials__card">
-            <h2>Rating 4.8⭐</h2>
-            <img src={Avatar2} alt="Avatar" />
-            <p>Hidden gem with cozy ambiance. Memorable dishes.</p>
-            <p className="name">Rufus</p>
+            <div className="testimonials__card__container">
+              <h3>Rating 4.8⭐</h3>
+              <img src={Avatar2} alt="Avatar" />
+            </div>
+            <div className="testimonials__card__info">
+              <p className="name">Rufus</p>
+              <p>Hidden gem with cozy ambiance. Memorable dishes.</p>
+            </div>
           </div>
           <div className="testimonials__card">
-            <h2>Rating 4.9⭐</h2>
-            <img src={Avatar3} alt="Avatar" />
-            <p>Incredible fusion cuisine. Innovative and delicious.</p>
-            <p className="name">Hailey</p>
+            <div className="testimonials__card__container">
+              <h3>Rating 4.9⭐</h3>
+              <img src={Avatar3} alt="Avatar" />
+            </div>
+            <div className="testimonials__card__info">
+              <p className="name">Hailey</p>
+              <p>Incredible fusion cuisine. Innovative and delicious.</p>
+            </div>
           </div>
           <div className="testimonials__card">
-            <h2>Rating 4.7⭐</h2>
-            <img src={Avatar4} alt="Avatar" />
-            <p>Authentic comfort food. Satisfying and great value.</p>
-            <p className="name">Alice</p>
+            <div className="testimonials__card__container">
+              <h3>Rating 4.7⭐</h3>
+              <img src={Avatar4} alt="Avatar" />
+            </div>
+            <div className="testimonials__card__info">
+              <p className="name">Alice</p>
+              <p>Authentic comfort food. Satisfying and great value.</p>
+            </div>
           </div>
         </div>
       </div>
