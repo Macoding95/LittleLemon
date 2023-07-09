@@ -2,6 +2,7 @@ import Facebook from "../assets/facebook.webp";
 import Instagram from "../assets/instagram.webp";
 import Twitter from "../assets/twitter.webp";
 import LogoFooter from "../assets/logo-footer.webp";
+import { Link } from "react-router-dom"
 
 function Footer() {
   return (
@@ -11,10 +12,10 @@ function Footer() {
         <div className="footer__info">
           <div className="footer__doormat">
             <p>Doormat</p>
-            <a href="/">Home</a>
-            <a href="/Menu">Menu</a>
-            <a href="/Reservations">Reservations</a>
-            <a href="/Order">Order online</a>
+            <Link to="/">Home</Link>
+            <Link to="/Menu">Menu</Link>
+            <Link to="/Reservations">Reservations</Link>
+            <Link to="/Order">Order</Link>
           </div>
           <div className="footer__contact">
             <p>Address: 123 Elm Street, Pineville, Anytown, USA</p>
