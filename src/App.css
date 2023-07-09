@@ -47,12 +47,17 @@
   text-decoration: none;
   color: var(--primary--color);
   font-weight: bold;
-  transition: color ease 0.25s;
+  transition: all ease 0.25s;
 }
 
-.header__nav ul li a:hover {
+.header__nav ul li a.active {
+  opacity: 0.5;
+}
+
+.header__nav ul li:hover a {
   color: var(--primary--two);
   text-decoration: underline;
+  opacity: 1;
 }
 
 /* Main */
@@ -565,7 +570,7 @@ main {
 }
 
 .popup__container a {
-  text-decoration: none;
+  border: 0;
   text-align: center;
   color: var(--primary);
   transition: all ease 0.25s;
@@ -575,4 +580,12 @@ main {
 
 .popup__container a:hover {
   color: var(--primary--two);
+}
+
+span.required {
+  color: red;
+}
+
+.error {
+  color: red;
 }
